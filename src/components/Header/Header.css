@@ -1,0 +1,35 @@
+header {
+    padding: 1% 0;
+    border-bottom: 4px solid var(--main-color);
+}
+
+.header-container {
+    width: 95%;
+    margin: auto;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-options,
+.header-search,
+.header-logo {
+    width: 33%;
+}
+
+.header-logo {
+    text-align: left;
+}
+
+.header-options {
+    display: flex;
+    align-items: center;
+}
+
+header svg {
+    width: 21px;
+    height: 21px;
+}

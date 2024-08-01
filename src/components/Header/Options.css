@@ -1,0 +1,18 @@
+#logo-flex {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+    color: var(--main-color);
+    gap: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#logo-flex:hover {
+    transition: .3s;
+    background-color: #FAE9EB;
+    color: #DF0F20;
+}
