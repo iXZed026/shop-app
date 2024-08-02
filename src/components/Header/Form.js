@@ -32,7 +32,7 @@ const Form = ({ onCloseForm, setName }) => {
             setPasswprdError("");
         }
 
-        if (fullName && password) {
+        if (fullName.trim().length >= 1 && password.trim().length >= 8) {
             setLoginFlag(true)
             setName(fullName)
             closeFormModal()

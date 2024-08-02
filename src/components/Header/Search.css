@@ -3,7 +3,29 @@
     height: 50px;
     background-color: #D6D6DC;
     border: none;
-    border-radius: 10px;
+    border-radius: 7px;
     outline: none;
-    padding: 0 1%;
+    padding: 0 4%;
+}
+
+.header-search div {
+    display: none;
+    width: 100%;
+    margin: auto;
+    height: 2px;
+    background-color: red;
+    
+}
+
+.search-animation {
+    animation: searchAni .3s ease-in-out 1;
+}
+
+@keyframes searchAni {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
 }

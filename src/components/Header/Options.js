@@ -3,24 +3,28 @@ import "./Options.css";
 
 const Options = (props) => {
 
-    const { title, logo, onForm } = props;
+    const { title, logo, onForm, onCart } = props;
 
 
     //check component name
     const optionDivHandler = () => {
-        if (props.title === "ورود / ثبت نام") {
+        if (title === "ورود / ثبت نام") {
             openFormModal();
         } else {
             openFormModal()
         }
+
+
     }
 
 
     const openFormModal = () => {
-        onForm(true);
+        if (onForm) {
+            onForm(true);
+        }
     }
 
-    console.log("oprions");
+
 
     return (
         <div id='logo-flex' onClick={optionDivHandler}>
