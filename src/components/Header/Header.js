@@ -28,7 +28,7 @@ const Header = () => {
                 <div className="header-container">
                     <div className="header-flex">
                         <div className="header-options">
-                            <Link to="/"><Options title="سبد خرید" logo={<FaShoppingCart />} /></Link>
+                            <Link to="/Cart"><Options title="سبد خرید" logo={<FaShoppingCart />} /></Link>
                             <Options title={name} logo={<FaUser />} onForm={openFormModal} />
                         </div>
                         <div className="header-search">
