@@ -3,6 +3,7 @@ import "./Header.css";
 import Brand from '../Brand/Brand';
 import Search from './Search';
 import Options from './Options';
+import NavBar from './NavBar';
 import Form from './Form';
 import { Link } from 'react-router-dom';
 import { FaUser } from "react-icons/fa6";
@@ -17,7 +18,7 @@ const Header = () => {
         setFormModal(formFlag)
     }
 
-    const openCartPage = (cartFlag)=>{
+    const openCartPage = (cartFlag) => {
         return "s"
     }
 
@@ -38,6 +39,7 @@ const Header = () => {
                             <Brand />
                         </div>
                     </div>
+                    <NavBar />
                 </div>
             </header>
             {formModal && (

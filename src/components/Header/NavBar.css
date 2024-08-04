@@ -1,0 +1,25 @@
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    width: 130px;
+    margin-right: .5%;
+}
+
+#nav-link {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+    color: var(--main-color);
+}
+
+#nav-link:hover {
+    transition: .3s;
+    background-color: #FAE9EB;
+    color: #DF0F20;
+}
