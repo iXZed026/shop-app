@@ -1,19 +1,37 @@
 .products {
     width: 92%;
-    padding-bottom: 2%;
     margin: auto;
     background-color: white;
     border-radius: 8px;
     margin-bottom: 2%;
 }
 
+#products-filter {
+    width: 130px;
+    height: 30px;
+    outline: none;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+#products-filter option {
+    width: 100%;
+    height: 30px;
+}
+
+
+
 
 .products-container h3 {
-    padding: 1% 1%;
     color: var(--main-color);
 }
 
 .products-flex {
+    width: 100%;
+    padding: 2% 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     flex-wrap: wrap;
 }
