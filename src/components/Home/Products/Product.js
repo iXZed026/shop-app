@@ -1,26 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./Product.css";
-import { products } from '../../data/ProductsData';
+import { products as productComp } from '../../data/ProductsData';
+import { SetAddProductsContext } from '../../context/AddProductProvider';
+import { Link } from 'react-router-dom';
 
 const Product = (props) => {
 
-  const { pName, price, pImage } = props;
-
-
-
+  const { id, pName, price, pImage, onProduct } = props;
 
   const newPrice = (price) => {
-    
     return price.toLocaleString("FA-IR");
-
-
   }
 
-
-
+  const sendProductItem = ()=>{
+    onProduct(props)
+  }
 
   return (
-    <div className="product">
+    <div className="product" onClick={sendProductItem}>
       <div className="product-container">
         <div className="product-body">
           <h3>{pName}</h3>

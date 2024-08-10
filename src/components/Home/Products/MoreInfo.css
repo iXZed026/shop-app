@@ -1,0 +1,141 @@
+.more-info {
+    width: 100%;
+    height: 101vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.251);
+}
+
+.more-info-container {
+    transition: .6s;
+    width: 95%;
+    height: 530px;
+    padding: 1% 1%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    animation: moreInfoAni .6s ease-in-out 1;
+}
+
+@keyframes moreInfoAni {
+    0%{
+        padding: 0;
+        height: 0;
+    }
+}
+
+.more-info-container svg {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.more-info-container svg:hover {
+    transition: .3s;
+    opacity: 0.5;
+}
+
+.more-info-container h4 {
+    padding: 1% 0;
+}
+
+#more-info-title {
+    color: var(--main-color);
+}
+
+.more-info-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: moreInfoFlexAni 1s linear 1;
+}
+
+@keyframes moreInfoFlexAni {
+    0%{
+        opacity: 0;
+    }40%{
+        opacity: 0;
+    }
+}
+
+.more-info-image {
+    width: 25%;
+    height: 431px;
+    display: flex;
+    align-items: center;
+
+}
+
+.more-info-image img {
+    width: 100%;
+}
+
+.more-info-features {
+    width: 37%;
+    height: 431px;
+    color: rgba(0, 0, 0, 0.779);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding: 3% 0;
+
+}
+
+.more-info-features h5 {
+    font-size: 15px;
+    line-height: 40px;
+}
+
+
+.more-info-add-to-cart {
+    width: 37%;
+    height: 431px;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.more-info-add-to-cart .shop-info {
+    width: 270px;
+    padding: 2% 2%;
+    border-radius: 15px;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.more-info-add-to-cart .shop-info  h5{
+    margin-bottom: 4%;
+}
+
+.more-info-add-to-cart .shop-info p {
+    margin-bottom: 4%;
+    font-weight: bold;
+}
+
+.more-info-add-to-cart .shop-info h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.more-info-add-to-cart button {
+    width: 60%;
+    height: 45px;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: red;
+    cursor: pointer
+}
+
+.more-info-add-to-cart button:hover {
+    transition: 0.3s;
+    background-color: #E1303F;
+}
