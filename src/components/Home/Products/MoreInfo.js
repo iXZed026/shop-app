@@ -1,13 +1,23 @@
-import React from 'react';
+import React ,{useContext}from 'react';
 import "./MoreInfo.css";
+import { AddProductsContext } from '../../context/AddProductProvider';
+import { SetAddProductsContext } from '../../context/AddProductProvider';
 import { RiCloseLargeLine } from "react-icons/ri";
 
 const MoreInfo = (props) => {
 
-    const { pName, pImage, info, price } = props.moreInfo
+    const { pName, pImage, info, price } = props.moreInfo;
+
+    const addProducts = useContext(AddProductsContext);
+    const setAddProducts = useContext(SetAddProductsContext);
 
     const closeMoreInfoComponent = ()=>{
        props.setMoreInfo(null)
+    }
+
+    const addToCart = ()=>{
+        closeMoreInfoComponent();
+            setAddProducts(prevProduct=> [...prevProduct,props.moreInfo])
     }
 
     return (
@@ -30,7 +40,7 @@ const MoreInfo = (props) => {
                             <p>ضمانت اصالت همراه با کد فعالسازی ارسال از انبار تهران    </p>
                             <h3>{price.toLocaleString("FA-IR")} تومان </h3>
                         </div>
-                        <button>افزودن به سبد خرید</button>
+                        <button onClick={addToCart}>افزودن به سبد خرید</button>
                     </div>
                 </div>
             </div>

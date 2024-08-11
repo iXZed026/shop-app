@@ -22,7 +22,7 @@
     background-color: var(--main-color);
 }
 
-.empty-cart-body{
+.empty-cart-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,4 +41,94 @@
 
 .empty-cart-body span {
     font-size: 17px;
+}
+
+.cart-item {
+    width: 88%;
+    margin: auto;
+}
+
+.cart-item-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item-flex .item {
+    width: 73%;
+    height: 310px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.item-container h3 {
+    font-size: 15px;
+    color: var(--main-color);
+    padding: 1.4% 0;
+}
+
+.item-flex table {
+    width: 100%;
+}
+
+.item-flex table select {
+    width: 80%;
+    height: 50px;
+    padding: 0 2%;
+    border: 1px solid rgba(0, 0, 0, 0.374);
+    border-radius: 15px;
+    margin: auto;
+}
+
+
+.item-flex table th {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.737);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.544);
+    padding: 1.5% 0;
+}
+
+.item-flex table tr td img {
+    width: 100px;
+}
+
+.cart-item-flex .continue-the-process {
+    width: 26%;
+    height: 310px;
+    padding: 0 .5%;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+
+.cart-item-flex .continue-the-process h3 {
+    font-size: 15px;
+    color: var(--main-color);
+    padding: 4% 0;
+}
+
+.cart-item-flex .continue-the-process p {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4% 0;
+    color: rgba(0, 0, 0, 0.742);
+}
+
+.continue-the-process-button {
+    padding: 3% 0;
+    text-align: center;
+}
+
+.cart-item-flex .continue-the-process button {
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    height: 43px;
+    cursor: pointer;
+    color: #ffff;
+    font-size: 15px;
+}
+
+.cart-item-flex .continue-the-process button:hover {
+    transition: .3s;
+    opacity: .8;
 }
