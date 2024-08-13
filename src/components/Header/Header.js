@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect ,useContext} from 'react';
 import "./Header.css";
 import Brand from '../Brand/Brand';
 import Search from './Search';
@@ -8,11 +8,15 @@ import Form from './Form';
 import { Link } from 'react-router-dom';
 import { FaUser } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
+import { NameContext } from '../context/FullNameProvider';
+import { SetNameContext } from '../context/FullNameProvider';
 
 const Header = () => {
 
+    const name = useContext(NameContext);
+    const setName = useContext(SetNameContext);
+
     const [formModal, setFormModal] = useState();
-    const [name, setName] = useState("ورود / ثبت نام")
 
     const openFormModal = (formFlag) => {
         setFormModal(formFlag)

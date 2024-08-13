@@ -41,7 +41,9 @@ const Form = ({ onCloseForm, setName }) => {
     }
 
     const closeFormModal = () => {
-        onCloseForm(false)
+        if(onCloseForm){
+            onCloseForm(false)
+        }
     }
 
     console.log("form")

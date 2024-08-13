@@ -29,7 +29,7 @@ const Options = (props) => {
     return (
         <div id='logo-flex' onClick={optionDivHandler}>
             <span>{logo}</span>
-            <span >{title}</span>
+            <span id={title !== "سبد خرید" ? "full-name" : ""}>{title}</span>
         </div>
     )
 }

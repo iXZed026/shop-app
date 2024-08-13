@@ -98,4 +98,51 @@ export let products = [
         price: 52290000,
         pType: "mobile",
     },
+    {
+
+        id: 7,
+        pName: "تبلت اپل iPad 10.9 2022 WiFi حافظه 64 گیگابایت",
+        pImage: "../../images/tablet3.jpg",
+        info: `تاریخ معرفی	Oct 2022
+ابعاد	248.6x179.5x7 میلیمتر
+وزن	477 گرم
+قطر صفحه نمایش	10.9 اینچ
+دقت صفحه نمایش	1640x2360 پیکسل
+نوع تراشه	Apple A14 Bionic -5 nm
+ظرفیت باتری	28.6Wh`,
+        productionDate: { year: 2024, month: 7, day: 27 },
+        price: 24390000,
+        pType: "tablet",
+    },
+    {
+
+        id: 8,
+        pName: "گوشی آنر X9b حافظه ۲۵۶ گیگابایت رم ۱۲ گیگابایت",
+        pImage: "../../images/mobile3.jpg",
+        info: `تاریخ معرفی	Oct 2023
+ابعاد	163.6x75.5x8 میلیمتر
+وزن	185 گرم
+قطر صفحه نمایش	6.78 اینچ
+دقت صفحه نمایش	1220x2652 پیکسل
+نوع تراشه	Qualcomm SM6450 Snapdragon 6 Gen 1 - 4nm
+ظرفیت باتری	5800mAh`,
+        productionDate: { year: 2024, month: 7, day: 27 },
+        price: 17945000,
+        pType: "mobile",
+    },
+    {
+
+        id: 9,
+        pName: "لپ تاپ اپل MacBook Pro 2023 M3 Pro-36-512 نمایشگر 16 اینچ MRW23",
+        pImage: "../../images/laptop3.jpg",
+        info: `ابعاد	355.7x248.1x16.8 میلیمتر
+وزن	2140 گرم
+قطر صفحه نمایش	16.2 اینچ
+پردازنده	Apple، M3 Pro
+حافظه رم	36GB
+حافظه داخلی	512GB`,
+        productionDate: { year: 2024, month: 7, day: 27 },
+        price: 162000000,
+        pType: "laptop",
+    },
 ]
