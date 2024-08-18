@@ -26,8 +26,6 @@ const Products = () => {
 
   const getProductItem = (item) => {
     setMoreInfo(item);
-    console.log(moreInfo);
-
   }
 
   return (

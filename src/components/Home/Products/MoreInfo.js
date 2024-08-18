@@ -9,7 +9,7 @@ import { SetNameContext } from '../../context/FullNameProvider';
 
 const MoreInfo = (props) => {
 
-    const { pName, pImage, info, price } = props.moreInfo;
+    const { pName, pImage, info, basePrice } = props.moreInfo;
 
     const [showForm, setShowForm] = useState(false)
 
@@ -52,7 +52,7 @@ const MoreInfo = (props) => {
                             <div className="shop-info">
                                 <h5>فروشنده فن اوران اینده</h5>
                                 <p>ضمانت اصالت همراه با کد فعالسازی ارسال از انبار تهران    </p>
-                                <h3>{price.toLocaleString("FA-IR")} تومان </h3>
+                                <h3>{basePrice.toLocaleString("FA-IR")} تومان </h3>
                             </div>
                             <button onClick={addToCart}>افزودن به سبد خرید</button>
                         </div>

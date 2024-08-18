@@ -1,9 +1,9 @@
 .form {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.263);
+    background-color: #fff;
     z-index: 1;
 }
 
@@ -18,8 +18,9 @@
 form {
     width: 430px;
     background-color: #ffff;
-    padding: 1% 1%;
-    border-radius: 8px;
+    padding: 1% 6%;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.166)  ;
     animation: formAni 0.2s ease-in 1;
 }
 
@@ -29,21 +30,37 @@ form {
     }
 }
 
+.form-logo {
+    text-align: center;
+    padding: 1% 0;
+}
+
+.form-logo img {
+    width: 145px;
+}
+
 .form-flex svg {
     font-size: 30px;
     cursor: pointer;
-    color: var(--main-color);
+    color: var(--tex-color);
 }
 
 .form-flex svg:hover {
-    background-color: #05396a36;
     transition: .3s;
+    opacity: 0.5;
 }
 
 .form-flex h2 {
-    font-size: 18px;
-    padding: 2% 0;
-    border-bottom: 4px solid var(--main-color);
+    font-size: 17px;
+    color: #0C0C0C;
+    padding: 3% 0;
+}
+
+.form-flex #p-info {
+    font-size: 13px;
+    font-weight: bold;
+    color: #0c0c0c8a;
+    padding: 1% 0;
 }
 
 .form-body {
@@ -56,22 +73,34 @@ form {
 }
 
 .form-footer {
+    width: 380px;
     padding: 2% 0;
     text-align: center;
 }
 
 .form-footer button {
-    width: 70%;
-    height: 40px;
+    width: 380px;
+    height: 50px;
     border-radius: 10px;
     color: #fff;
     font-size: 17px;
     border: none;
-    background-color: #ed2525;
+    background-color: var(--main-color);
     cursor: pointer;
+    margin-bottom: 3%;
 }
 
 .form-footer button:hover {
     transition: .3s;
-    background-color: #ed2525de;
+    opacity: 0.7;
+}
+
+.form-footer p {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.748);
+}
+
+.form-footer p span {
+    color: #008EB2;
 }

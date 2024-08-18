@@ -1,5 +1,48 @@
 .ads-carousel{
-    border: 2px solid black;
-    height: 400px;
+    width: 100%;
     margin-bottom: 3%;
+}
+
+.carousel {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
+}
+
+.carousel #next {
+    font-size: 28px;
+    position: absolute;
+    right: 1%;
+    bottom: 50%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.642);
+}
+
+.carousel #next:hover {
+    transition: .3s;
+    color: rgb(238, 37, 37);
+}
+
+.carousel #previous {
+    font-size: 28px;
+    position: absolute;
+    left: 1%;
+    bottom: 50%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.642);
+}
+
+
+.carousel #previous:hover {
+    transition: .3s;
+    color: rgb(238, 37, 37);
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect ,useContext} from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import "./Header.css";
 import Brand from '../Brand/Brand';
 import Search from './Search';
@@ -6,7 +6,7 @@ import Options from './Options';
 import NavBar from './NavBar';
 import Form from './Form';
 import { Link } from 'react-router-dom';
-import { FaUser } from "react-icons/fa6";
+import { TbLogin } from "react-icons/tb";
 import { FaShoppingCart } from "react-icons/fa";
 import { NameContext } from '../context/FullNameProvider';
 import { SetNameContext } from '../context/FullNameProvider';
@@ -22,9 +22,9 @@ const Header = () => {
         setFormModal(formFlag)
     }
 
-    const openCartPage = (cartFlag) => {
-        return "s"
-    }
+    // const openCartPage = (cartFlag) => {
+    //     return "s"
+    // }
 
 
     return (
@@ -33,8 +33,8 @@ const Header = () => {
                 <div className="header-container">
                     <div className="header-flex">
                         <div className="header-options">
+                            <Options title={name} logo={<TbLogin />} onForm={openFormModal} />
                             <Link to="/Cart"><Options title="سبد خرید" logo={<FaShoppingCart />} /></Link>
-                            <Options title={name} logo={<FaUser />} onForm={openFormModal} />
                         </div>
                         <div className="header-search">
                             <Search />

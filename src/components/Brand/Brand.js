@@ -3,7 +3,7 @@ import "./Brand.css";
 
 const Brand = () => {
   return (
-    <img src="../../images/brand.jpg" alt="image not found" />
+    <img src="../../images/logo.svg" alt="image not found" />
   )
 }
 

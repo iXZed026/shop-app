@@ -1,5 +1,7 @@
 :root {
-    --main-color:#05396a
+  --main-color: #DB304E;
+  --text-color:rgba(0, 0, 0, 0.738);
+  --blue-color:#96C8F0;
 }
 
 body {
@@ -14,4 +16,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #3b3b3b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 3px;
 }

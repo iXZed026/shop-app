@@ -18,7 +18,7 @@ const Search = () => {
 
     return (
         <>
-            <input type="search" placeholder=' 🔍 جستو جو در الدیجیتال' onBlur={searchBlur} onFocus={searchOpration}/>
+            <input type="search" placeholder=' 🔍 جستو جو' onBlur={searchBlur} onFocus={searchOpration}/>
             <div ref={searchAniRef} ></div>
             <ul id="suggestion-search">
                 

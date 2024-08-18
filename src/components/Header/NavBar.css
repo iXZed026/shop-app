@@ -1,4 +1,5 @@
 nav ul {
+    direction: rtl;
     display: flex;
     align-items: center;
 }
@@ -8,6 +9,11 @@ nav ul li {
     margin-right: .5%;
 }
 
+nav ul li svg {
+    width: 17px;
+    color:var(--text-color)
+}
+
 #nav-link {
     width: 100%;
     height: 38px;
@@ -15,11 +21,8 @@ nav ul li {
     justify-content: center;
     align-items: center;
     gap:4px;
-    color: var(--main-color);
+    font-size: 13px;
+    font-weight: bold;
+    color:var(--text-color);
 }
 
-#nav-link:hover {
-    transition: .3s;
-    background-color: #FAE9EB;
-    color: #DF0F20;
-}

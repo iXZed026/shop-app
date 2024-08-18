@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 
 const Product = (props) => {
 
-  const { id, pName, price, pImage, onProduct } = props;
+  const { id, pName, basePrice, pImage, onProduct } = props;
 
-  const newPrice = (price) => {
-    return price.toLocaleString("FA-IR");
+  const newPrice = (basePrice) => {
+    return basePrice.toLocaleString("FA-IR");
   }
 
   const sendProductItem = ()=>{
@@ -19,12 +19,12 @@ const Product = (props) => {
   return (
     <div className="product" onClick={sendProductItem}>
       <div className="product-container">
-        <div className="product-body">
-          <h3>{pName}</h3>
-          <p id="product-price">{newPrice(price)} تومان </p>
-        </div>
         <div className="product-image">
           <img src={pImage} alt="" />
+        </div>
+        <div className="product-body">
+          <h3>{pName}</h3>
+          <p id="product-price">{newPrice(basePrice)} تومان </p>
         </div>
       </div>
     </div>

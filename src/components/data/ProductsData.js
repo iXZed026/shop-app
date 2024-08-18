@@ -13,7 +13,8 @@ export let products = [
 نوع تراشه	Exynos 1480 -4 nm
 ظرفیت باتری	5000mAh`,
         productionDate: { year: 2023, month: 2, day: 29 },
-        price: 28190000,
+        basePrice: 28190000,
+        price:null,
         pType: "mobile",
     },
     {
@@ -30,7 +31,8 @@ export let products = [
 حافظه رم	16GB
 حافظه داخلی	512GB`,
         productionDate: { year: 2024, month: 6, day: 21 },
-        price: 47930000,
+        basePrice: 47930000,
+        price:null,
         pType: "laptop",
     },
     {
@@ -48,7 +50,8 @@ export let products = [
 نوع تراشه	Qualcomm SM8550-AC Snapdragon 8 Gen 2 - 4 nm
 ظرفیت باتری	8400mAh`,
         productionDate: { year: 2024, month: 6, day: 21 },
-        price: 54390000,
+        basePrice: 54390000,
+        price:null,
         pType: "tablet",
     },
     {
@@ -63,7 +66,8 @@ export let products = [
 حافظه رم	8GB
 حافظه داخلی	512GB`,
         productionDate: { year: 2024, month: 7, day: 27 },
-        price: 82000000,
+        basePrice: 82000000,
+        price:null,
         pType: "laptop",
     },
     {
@@ -79,7 +83,8 @@ export let products = [
 نوع تراشه	Apple M2
 ظرفیت باتری	7538mAh، 28.65Wh`,
         productionDate: { year: 2024, month: 7, day: 27 },
-        price: 35399000,
+        basePrice: 35399000,
+        price:null,
         pType: "tablet",
     },
     {
@@ -95,7 +100,8 @@ export let products = [
 نوع تراشه	Qualcomm SM6450 Snapdragon 6 Gen 1 4 nm
 ظرفیت باتری	5000mAh`,
         productionDate: { year: 2024, month: 7, day: 27 },
-        price: 52290000,
+        basePrice: 52290000,
+        price:null,
         pType: "mobile",
     },
     {
@@ -111,7 +117,8 @@ export let products = [
 نوع تراشه	Apple A14 Bionic -5 nm
 ظرفیت باتری	28.6Wh`,
         productionDate: { year: 2024, month: 7, day: 27 },
-        price: 24390000,
+        basePrice: 24390000,
+        price:null,
         pType: "tablet",
     },
     {
@@ -127,7 +134,8 @@ export let products = [
 نوع تراشه	Qualcomm SM6450 Snapdragon 6 Gen 1 - 4nm
 ظرفیت باتری	5800mAh`,
         productionDate: { year: 2024, month: 7, day: 27 },
-        price: 17945000,
+        basePrice: 17945000,
+        price:null,
         pType: "mobile",
     },
     {
@@ -142,7 +150,8 @@ export let products = [
 حافظه رم	36GB
 حافظه داخلی	512GB`,
         productionDate: { year: 2024, month: 7, day: 27 },
-        price: 162000000,
+        basePrice: 162000000,
+        price:null,
         pType: "laptop",
     },
 ]

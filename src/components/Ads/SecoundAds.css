@@ -1,0 +1,13 @@
+.secound-ads {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secound-ads img {
+    width: 24%;
+    border-radius: 20px;
+    cursor: pointer;
+}

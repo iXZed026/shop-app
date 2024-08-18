@@ -1,7 +1,8 @@
 header {
+    direction: ltr;
     background-color: #fff;
-    border-bottom: 4px solid var(--main-color);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.271);
+    /* border-bottom: 2px solid var(--main-color); */
+    box-shadow: 0 0 5px var(--text-color);
     margin-bottom: 20px;
     padding: .25% 0;
 }
@@ -18,20 +19,25 @@ header {
 }
 
 .header-search {
-    text-align: center;
+    direction: rtl;
+    margin-left: auto;
+    padding: .5% 0;
 }
 
 .header-options,
 .header-search,
 .header-logo {
+    direction: rtl;
     width: 33%;
 }
 
 .header-logo {
-    text-align: left;
+    width: 130px;
+    text-align: right;
 }
 
 .header-options {
+    width: 250px;
     display: flex;
     align-items: center;
 }

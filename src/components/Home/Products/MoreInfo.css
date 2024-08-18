@@ -2,7 +2,7 @@
     width: 100%;
     height: 101vh;
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     background-color: rgba(0, 0, 0, 0.251);
 }
@@ -15,7 +15,7 @@
     margin: auto;
     background-color: #fff;
     border-radius: 10px;
-    animation: moreInfoAni .6s ease-in-out 1;
+    animation: moreInfoAni .6s linear 1;
 }
 
 @keyframes moreInfoAni {
@@ -42,7 +42,7 @@
 }
 
 #more-info-title {
-    color: var(--main-color);
+    color: rgba(0, 0, 0, 0.697);
 }
 
 .more-info-flex {
@@ -105,8 +105,8 @@
     width: 270px;
     padding: 2% 2%;
     border-radius: 15px;
-    border: 2px solid var(--main-color);
-    color: var(--main-color);
+    border: 3px solid var(--main-color);
+    color: var(--text-color);
 }
 
 .more-info-add-to-cart .shop-info  h5{
@@ -130,8 +130,8 @@
     color: #fff;
     font-size: 15px;
     border: none;
-    border-radius: 15px;
-    background-color: red;
+    border-radius: 5px;
+    background-color: var(--main-color);
     cursor: pointer
 }
 

@@ -41,20 +41,24 @@ const Form = ({ onCloseForm, setName }) => {
     }
 
     const closeFormModal = () => {
-        if(onCloseForm){
+        if (onCloseForm) {
             onCloseForm(false)
         }
     }
 
-    console.log("form")
 
     return (
         <div className="form">
             <div className="form-container">
                 <div className="form-flex">
                     <form action="" onSubmit={formSubmit}>
-                        <IoIosClose onClick={closeFormModal} />
-                        <h2>ثبت نام</h2>
+                        <IoIosClose onClick={closeFormModal} /><br />
+                        <div className="form-logo">
+                            <img src="../../images/logo.svg" alt="" />
+                        </div>
+                        <h2>ورود | ثبت نام</h2>
+                        <p id='p-info'>سلام!</p>
+                        <p id='p-info'>لطفا اطلاعات خواسته شده را وارد نمایید.</p>
                         <div className="form-body">
                             <Inputs
                                 fullName={formValues.fullName}
@@ -74,6 +78,7 @@ const Form = ({ onCloseForm, setName }) => {
                         </div>
                         <div className="form-footer">
                             <button>ادامه</button>
+                            <p>ورود شما به معنای پذیرش <span>شرایط دیجی‌کالاوقوانین حریم‌خصوصی</span> است</p>
                         </div>
                     </form>
                 </div>

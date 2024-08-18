@@ -2,10 +2,11 @@
     width: 380px;
     padding: 3% 3%;
     color: rgba(0, 0, 0, 0.616);
-    border: 1px solid rgba(0, 0, 0, 0.341);
-    border-radius: 10px;
+    border: 1px solid #008EB2;
+    border-radius: 7px;
     outline: none;
     font-size: 16px;
+    margin-bottom: 3%;
 }
 
 .form-body #input-error {
