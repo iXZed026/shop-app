@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import "./App.css"
 import Header from './components/Header/Header';
 import Cart from './components/Header/Cart';
@@ -14,14 +14,14 @@ const App = () => {
 
   const [loading, setLoading] = useState(false);
 
-  useEffect(()=>{
-    let showWebsite = setTimeout(()=>{
+  useEffect(() => {
+    let showWebsite = setTimeout(() => {
       setLoading(true);
-    },4000);
+    }, 4000);
 
-    return ()=> clearTimeout(showWebsite)
+    return () => clearTimeout(showWebsite)
 
-  },[])
+  }, [])
 
   return (
     <div className="app">
