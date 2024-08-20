@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./NewProduct.css"
 
 const NewProduct = (props) => {
 
@@ -8,11 +9,11 @@ const NewProduct = (props) => {
         <div className="new-product">
             <div className="new-product-contianer">
                 <div className="new-product-flex">
-                    <div className='.new-product-image'>
+                    <div className='new-product-image'>
                         <img src={pImage} alt="" />
                     </div>
                     <h4>{pName}</h4>
-                    <span>{basePrice}</span>
+                    <span>{basePrice.toLocaleString()} تومان </span>
                 </div>
             </div>
         </div>

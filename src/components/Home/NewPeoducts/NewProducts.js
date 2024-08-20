@@ -17,7 +17,7 @@ const NewProducts = () => {
             }
         });
 
-        const randomProduct = products.slice(-4)
+        const randomProduct = products.slice(-9)
         if (!findNewProduct == []) {
             setNewProducts(randomProduct);
         } else {

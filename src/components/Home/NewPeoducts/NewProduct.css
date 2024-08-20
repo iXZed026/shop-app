@@ -1,0 +1,37 @@
+.new-product {
+    width: 190px;
+    padding: 1% 1%;
+    height: 275px;
+    background-color: #ffff;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.new-product-flex {
+    text-align: left;
+}
+
+.new-product-image {
+    text-align: center;
+}
+
+.new-product-image img {
+    width: 150px;
+}
+
+.new-product h4 {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.596);
+    margin-bottom: 12px;
+    text-align: right;
+}
+
+.new-product span {
+    position: absolute;
+    left: 6%;
+    bottom: 20px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+}
+

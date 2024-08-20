@@ -10,6 +10,7 @@
 
 .new-products-flex {
     width: 100%;
+    padding: 1.5% 0;
     background-color: #DD315E;
     border-radius: 15px;
     display: flex;
@@ -18,16 +19,15 @@
 }
 
 .new-products-banner {
-    width: 200px;
-    border: 1px solid black;
+    width: 230px;
     text-align: center;
     padding: 1% 0;
 }
 
 .new-products-banner h3 {
     width: 150px;
-    margin-left:  auto;
-    margin-right:  auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     color: #ffff;
     font-size: 20px;
@@ -35,4 +35,15 @@
 
 .new-products-banner img {
     width: 150px;
+}
+
+.new-products-box {
+    width: 100%;
+    margin: auto;
+    padding: .2% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    overflow-x: scroll;
 }
