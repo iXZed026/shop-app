@@ -65,7 +65,7 @@ export let products = [
 پردازنده	Apple، M2
 حافظه رم	8GB
 حافظه داخلی	512GB`,
-        productionDate: { year: 2024, month: 7, day: 27 },
+        productionDate: { year: 2024, month: 90, day: 27 },
         basePrice: 82000000,
         price:null,
         pType: "laptop",
@@ -82,7 +82,7 @@ export let products = [
 دقت صفحه نمایش	1668x2388 پیکسل
 نوع تراشه	Apple M2
 ظرفیت باتری	7538mAh، 28.65Wh`,
-        productionDate: { year: 2024, month: 7, day: 27 },
+        productionDate: { year: 2024, month: 90, day: 27 },
         basePrice: 35399000,
         price:null,
         pType: "tablet",
@@ -99,7 +99,7 @@ export let products = [
 دقت صفحه نمایش	1080x2520 پیکسل
 نوع تراشه	Qualcomm SM6450 Snapdragon 6 Gen 1 4 nm
 ظرفیت باتری	5000mAh`,
-        productionDate: { year: 2024, month: 7, day: 27 },
+        productionDate: { year: 2024, month: 90, day: 27 },
         basePrice: 52290000,
         price:null,
         pType: "mobile",
@@ -116,7 +116,7 @@ export let products = [
 دقت صفحه نمایش	1640x2360 پیکسل
 نوع تراشه	Apple A14 Bionic -5 nm
 ظرفیت باتری	28.6Wh`,
-        productionDate: { year: 2024, month: 7, day: 27 },
+        productionDate: { year: 2024, month: 90, day: 27 },
         basePrice: 24390000,
         price:null,
         pType: "tablet",
@@ -133,7 +133,7 @@ export let products = [
 دقت صفحه نمایش	1220x2652 پیکسل
 نوع تراشه	Qualcomm SM6450 Snapdragon 6 Gen 1 - 4nm
 ظرفیت باتری	5800mAh`,
-        productionDate: { year: 2024, month: 7, day: 27 },
+        productionDate: { year: 2024, month: 90, day: 27 },
         basePrice: 17945000,
         price:null,
         pType: "mobile",
@@ -149,7 +149,7 @@ export let products = [
 پردازنده	Apple، M3 Pro
 حافظه رم	36GB
 حافظه داخلی	512GB`,
-        productionDate: { year: 2024, month: 7, day: 27 },
+        productionDate: { year: 2024, month: 90, day: 27 },
         basePrice: 162000000,
         price:null,
         pType: "laptop",
