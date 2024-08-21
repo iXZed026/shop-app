@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Footer.css";
 import FooterHeading from './FooterHeading';
+import FooterBody from './FooterBody';
 
 
 
@@ -10,6 +11,7 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-flex">
                     <FooterHeading />
+                    <FooterBody />
                 </div>
             </div>
         </footer>
