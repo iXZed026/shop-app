@@ -1,0 +1,17 @@
+.footer-heading img{
+    width: 150px;
+    margin: auto;
+    margin-bottom: 14px;
+}
+
+.footer-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contacts span{
+    font-size: 15px;
+    padding: 0% .5%;
+    color: var(--text-color);
+    border-left: 2px solid var(--text-color);
+}
