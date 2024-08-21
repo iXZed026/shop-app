@@ -5,6 +5,8 @@ const NewProduct = (props) => {
 
     const { pImage, pName, basePrice } = props;
 
+    console.log("render")
+
     return (
         <div className="new-product">
             <div className="new-product-contianer">

@@ -1,7 +1,6 @@
 .new-product {
-    width: 190px;
     padding: 1% 1%;
-    height: 275px;
+    height: 300px;
     background-color: #ffff;
     position: relative;
     user-select: none;
@@ -17,7 +16,7 @@
 }
 
 .new-product-image img {
-    width: 150px;
+    width: 155px;
 }
 
 .new-product h4 {
@@ -30,7 +29,7 @@
 .new-product span {
     position: absolute;
     left: 6%;
-    bottom: 20px;
+    bottom: 15px;
     color: rgba(0, 0, 0, 0.87);
     font-size: 15px;
 }

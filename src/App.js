@@ -9,6 +9,7 @@ import FullNameProvider from './components/context/FullNameProvider';
 import FirstAds from './components/Ads/FirstAds';
 import SecoundAds from './components/Ads/SecoundAds';
 import Loading from './components/Loading/Loading';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
 
@@ -38,7 +39,9 @@ const App = () => {
               </AddProductProvider>
             </FullNameProvider>
             <SecoundAds />
-            <FirstAds /></>
+            <FirstAds />
+            <Footer />
+          </>
         ) : (
           <Loading />
         )
