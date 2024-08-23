@@ -1,5 +1,5 @@
 .footer-heading {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .footer-heading img{
@@ -14,8 +14,8 @@
 }
 
 .footer-contacts span{
-    font-size: 15px;
-    padding: 0% .5%;
+    font-size: 14px;
+    padding: 0% 1.5%;
     color: var(--text-color);
-    border-left: 2px solid var(--text-color);
+    border-left: 2px solid rgba(0, 0, 0, 0.308);
 }

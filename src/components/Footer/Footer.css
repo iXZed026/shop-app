@@ -1,6 +1,7 @@
 footer {
     width: 100%;
     padding: 2% 0;
+    border: 1px solid rgba(0, 0, 0, 0.156);
 }
 
 .footer-container {
