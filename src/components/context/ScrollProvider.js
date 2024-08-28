@@ -14,4 +14,5 @@ const ScrollProvider = ({ children }) => {
 }
 
 
-export default {ScrollProvider,ScrollContext};
+export {ScrollContext};
+export default ScrollProvider;

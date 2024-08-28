@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import { Routes, Route } from 'react-router-dom';
 import { AddProductProvider } from './components/context/AddProductProvider';
 import FullNameProvider from './components/context/FullNameProvider';
+import ScrollProvider from './components/context/ScrollProvider';
 import FirstAds from './components/Ads/FirstAds';
 import SecoundAds from './components/Ads/SecoundAds';
 import Loading from './components/Loading/Loading';
@@ -30,6 +31,7 @@ const App = () => {
         loading ? (
           <>
             <FullNameProvider>
+              <ScrollProvider>
               <Header />
               <AddProductProvider>
                 <Routes>
@@ -37,6 +39,7 @@ const App = () => {
                   <Route path='/' element={<Home />} />
                 </Routes>
               </AddProductProvider>
+              </ScrollProvider>
             </FullNameProvider>
             <SecoundAds />
             <FirstAds />

@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import "./Products.css";
 import Product from './Product';
 import { products as productsComp } from '../../data/ProductsData';
 import MoreInfo from './MoreInfo';
+import { ScrollContext } from '../../context/ScrollProvider';
 
 
 const Products = () => {
+
+  const scrollRef = useContext(ScrollContext);
+
+  
 
   const [products, setProducts] = useState(productsComp);
   const [moreInfo, setMoreInfo] = useState();
@@ -31,7 +36,7 @@ const Products = () => {
   return (
     <>
       {!moreInfo ? (
-        <div className="products">
+        <div className="products" ref={scrollRef}>
           <div className="products-container">
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.3% 1%" }}>
               <h3>محصولات</h3>

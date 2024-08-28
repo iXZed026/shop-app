@@ -1,8 +1,13 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useContext } from 'react';
 import "./Search.css";
+import { ScrollContext } from '../context/ScrollProvider';
 
 const Search = () => {
-    
+
+    const scrollRef = useContext(ScrollContext);
+
+
+
     const searchAniRef = useRef();
     const searchSuggestions = ["mobile", "laptop", "موبایل", "لپ تاپ"];
     const [suggestItems, setSuggestItems] = useState([])
@@ -18,8 +23,6 @@ const Search = () => {
     const searchBlur = (e) => {
         e.target.style.backgroundColor = "#D6D6DC"
         searchAniRef.current.style.display = "none";
-        setSearchSuggestionsFlag(false);
-
     }
 
 
@@ -36,6 +39,13 @@ const Search = () => {
             setSuggestItems([]);
         }
 
+
+    }
+
+    const scrollToTarget = () => {
+        console.log(scrollRef);
+        scrollRef.current.scrollIntoView({ behavior: "smooth" });
+        setSearchSuggestionsFlag(false);
     }
 
     return (
@@ -45,7 +55,7 @@ const Search = () => {
             {
                 searchSuggestionsFlag && (
                     <ul id="search-suggestions">
-                        {suggestItems.map((item, key) => <li id="search-suggestions-item">{item}</li>)}
+                        {suggestItems.map((item, key) => <li key={key} id="search-suggestions-item" onClick={scrollToTarget}>{item}</li>)}
                     </ul>
                 )
             }
@@ -53,4 +63,4 @@ const Search = () => {
     )
 }
 
-export default {Search};
+export default Search;
