@@ -14,7 +14,17 @@
     margin: auto;
     height: 2px;
     background-color: red;
-    
+}
+
+#search-suggestions {
+    width: 100%;
+    background-color: #ffff;
+    border: 1px solid rgba(0, 0, 0, 0.314);
+}
+
+#search-suggestions-item {
+    padding: 2% 1%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.148);
 }
 
 .search-animation {
@@ -22,10 +32,11 @@
 }
 
 @keyframes searchAni {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 100%;
     }
 }

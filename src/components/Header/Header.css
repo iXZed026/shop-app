@@ -22,6 +22,7 @@ header {
     direction: rtl;
     height: 60px;
     margin-left: auto;
+    z-index: 3;
 }
 
 .header-options,
