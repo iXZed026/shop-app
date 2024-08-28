@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import "./Search.css";
 
-let scrollRef = useRef(null);
 const Search = () => {
     
     const searchAniRef = useRef();
@@ -54,5 +53,4 @@ const Search = () => {
     )
 }
 
-export {scrollRef}
 export default {Search};
