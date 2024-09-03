@@ -1,18 +1,21 @@
-import React, { useState,useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import "./Products.css";
 import Product from './Product';
 import { products as productsComp } from '../../data/ProductsData';
 import MoreInfo from './MoreInfo';
 import { ScrollContext } from '../../context/ScrollProvider';
+import { ProductsContext, SetProductsContext } from '../../context/ProductsProvider';
+
 
 
 const Products = () => {
 
   const scrollRef = useContext(ScrollContext);
+  const products = useContext(ProductsContext);
+  const setProducts = useContext(SetProductsContext);
 
-  
 
-  const [products, setProducts] = useState(productsComp);
+  // const [products, setProducts] = useState(productsComp);
   const [moreInfo, setMoreInfo] = useState();
 
   const prodcutFiltering = (e) => {

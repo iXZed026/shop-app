@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import { Routes, Route } from 'react-router-dom';
 import { AddProductProvider } from './components/context/AddProductProvider';
 import FullNameProvider from './components/context/FullNameProvider';
+import ProductsProvider from './components/context/ProductsProvider';
 import ScrollProvider from './components/context/ScrollProvider';
 import FirstAds from './components/Ads/FirstAds';
 import SecoundAds from './components/Ads/SecoundAds';
@@ -32,13 +33,15 @@ const App = () => {
           <>
             <FullNameProvider>
               <ScrollProvider>
-              <Header />
-              <AddProductProvider>
-                <Routes>
-                  <Route path='/Cart' element={<Cart />} />
-                  <Route path='/' element={<Home />} />
-                </Routes>
-              </AddProductProvider>
+                <AddProductProvider>
+                  <ProductsProvider>
+                    <Header />
+                    <Routes>
+                      <Route path='/Cart' element={<Cart />} />
+                      <Route path='/' element={<Home />} />
+                    </Routes>
+                  </ProductsProvider>
+                </AddProductProvider>
               </ScrollProvider>
             </FullNameProvider>
             <SecoundAds />
@@ -49,7 +52,7 @@ const App = () => {
           <Loading />
         )
       }
-    </div>
+    </div >
   )
 }
 

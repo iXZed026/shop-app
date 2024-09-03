@@ -1,11 +1,12 @@
 import React, { useState, createContext , useContext} from 'react';
+import { products as productsComp} from '../data/ProductsData';
 
 const ProductsContext = createContext();
 const SetProductsContext = createContext();
 
-const ProdductsProvider = ({ children }) => {
+const ProductsProvider = ({ children }) => {
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState(productsComp);
 
     return (
         <ProductsContext.Provider value={products}>
@@ -16,8 +17,7 @@ const ProdductsProvider = ({ children }) => {
     )
 }
 
-const useProduct = useContext(ProductsContext); 
-const useSetProduct = useContext(SetProductsContext); 
 
-export {useProduct,useSetProduct};
-export default ProdductsProvider
+
+export {ProductsContext,SetProductsContext};
+export default ProductsProvider
