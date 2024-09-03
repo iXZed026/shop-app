@@ -1,11 +1,12 @@
 import React, { useRef, useState, useContext } from 'react';
 import "./Search.css";
 import { ScrollContext } from '../context/ScrollProvider';
+import { products as productsComp } from '../data/ProductsData';
 
 const Search = () => {
 
     const scrollRef = useContext(ScrollContext);
-
+    const [products, setProducts] = useState(productsComp);
 
 
     const searchAniRef = useRef();
@@ -14,21 +15,27 @@ const Search = () => {
     const [searchSuggestionsFlag, setSearchSuggestionsFlag] = useState(false);
 
     const searchOpration = (e) => {
+        setSuggestItems([])
         searchAniRef.current.style.display = "block";
         searchAniRef.current.className = "search-animation";
         e.target.style.backgroundColor = "#c3c3c3";
         setSearchSuggestionsFlag(true);
+        if (!searchSuggestionsFlag) {
+            e.target.value = ""
+        }
     }
 
     const searchBlur = (e) => {
         e.target.style.backgroundColor = "#D6D6DC"
         searchAniRef.current.style.display = "none";
+        e.target.value = ""
     }
 
 
     const suggestionHandler = (e) => {
 
         const value = e.target.value;
+
 
         const fillteringSuggestion = searchSuggestions.filter(suggest => {
             return suggest.toLowerCase().startsWith(value.toLowerCase());
@@ -42,9 +49,21 @@ const Search = () => {
 
     }
 
-    const scrollToTarget = () => {
-        console.log(scrollRef);
+    const scrollToTarget = (e) => {
+
+        const value = e.target.innerHTML;
+
+        let filterProduct = productsComp.filter(product => {
+            if (value.startsWith("لپ")) {
+                return product.pType === "laptop"
+            }
+        });
+
+        console.log(filterProduct);
+
+
         scrollRef.current.scrollIntoView({ behavior: "smooth" });
+
         setSearchSuggestionsFlag(false);
     }
 

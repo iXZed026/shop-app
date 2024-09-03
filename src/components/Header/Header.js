@@ -22,10 +22,6 @@ const Header = () => {
         setFormModal(formFlag)
     }
 
-    // const openCartPage = (cartFlag) => {
-    //     return "s"
-    // }
-
 
     return (
         <>

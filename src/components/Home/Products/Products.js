@@ -41,11 +41,11 @@ const Products = () => {
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.3% 1%" }}>
               <h3>محصولات</h3>
               <select name="" id="products-filter" onClick={prodcutFiltering}>
-                <option value="all">همه</option>
-                <option value="mobile">موبایل</option>
-                <option value="laptop">لپ تاب</option>
-                <option value="tablet">تبلت</option>
-                <option value="new">جدید ترین</option>
+                <option id='product-filter-item' value="all">همه</option>
+                <option id='product-filter-item' value="mobile">موبایل</option>
+                <option id='product-filter-item' value="laptop">لپ تاب</option>
+                <option id='product-filter-item' value="tablet">تبلت</option>
+                <option id='product-filter-item' value="new">جدید ترین</option>
               </select>
             </div>
             <div id="line"></div>
