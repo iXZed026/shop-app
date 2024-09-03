@@ -2,15 +2,17 @@ import React, { useRef, useState, useContext } from 'react';
 import "./Search.css";
 import { ScrollContext } from '../context/ScrollProvider';
 import { products as productsComp } from '../data/ProductsData';
+import { ProductsContext , SetProductsContext } from '../context/ProductsProvider';
 
 const Search = () => {
 
     const scrollRef = useContext(ScrollContext);
-    const [products, setProducts] = useState(productsComp);
+    const products = useContext(ProductsContext);
+    const setProducts = useContext(SetProductsContext);
 
 
     const searchAniRef = useRef();
-    const searchSuggestions = ["mobile", "laptop", "موبایل", "لپ تاپ"];
+    const searchSuggestions = ["mobile", "laptop","tablet","تبلت", "موبایل", "لپ تاپ"];
     const [suggestItems, setSuggestItems] = useState([])
     const [searchSuggestionsFlag, setSearchSuggestionsFlag] = useState(false);
 
@@ -54,16 +56,20 @@ const Search = () => {
         const value = e.target.innerHTML;
 
         let filterProduct = productsComp.filter(product => {
-            if (value.startsWith("لپ")) {
+            if (value.startsWith("لپ") || value.startsWith("لب")||value.startsWith("lap")) {
                 return product.pType === "laptop"
-            }
+            } else if (value.startsWith("موب") || value.startsWith("mo")) {
+                return product.pType === "mobile";
+            } else if (value.startsWith("تب") || value.startsWith("tab")) {
+                return product.pType === "tablet";
+            } 
         });
 
-        console.log(filterProduct);
-
+        setTimeout(()=>{
+            setProducts(filterProduct);
+        },1000)
 
         scrollRef.current.scrollIntoView({ behavior: "smooth" });
-
         setSearchSuggestionsFlag(false);
     }
 
