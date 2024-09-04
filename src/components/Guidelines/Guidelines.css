@@ -1,8 +1,9 @@
 .guidelines {
-    margin: 50px 0;
+    margin: 50px auto;
     width: 92%;
-    margin: auto;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.216);
+    padding: 1% 0;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
 }
 
 .guidelines-container {
@@ -10,12 +11,40 @@
     margin: auto;
 }
 
-.guidelines-header{
+.guidelines-header {
     padding: 1% 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .guidelines-header h1 {
     font-size: 21px;
     padding: .5%;
+}
+
+.guidelines-body {
+    width: 90%;
+    margin: auto;
+    padding: 1% 0;
+}
+
+.guidelines-body h5 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.guidelines-body p {
+    color: #001842;
+    font-size: 15.5px;
+    margin-bottom: 35px;
+}
+
+.guidelines-body ul {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.guidelines-body ul li {
+    list-style: initial;
+    margin-bottom: 6px;
 }
