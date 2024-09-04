@@ -17,7 +17,7 @@ const NavBar = () => {
                     <Link to="/Guidelines/Guidelines" id='nav-link'><MdPrivacyTip/>راهنما و مقررات</Link>
                 </li>
                 <li>
-                    <Link to="" id='nav-link'><IoCall/>تماس با ما</Link>
+                    <Link to="/Contact/Contact" id='nav-link'><IoCall/>تماس با ما</Link>
                 </li>
                 <li>
                     <Link to="/About/About" id='nav-link'><FaCircleInfo/>درباره ما</Link>
