@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Cart from './components/Header/Cart';
 import Home from './components/Home/Home';
 import Guidelines from './components/Guidelines/Guidelines';
+import About from './components/About/About';
 import { Routes, Route } from 'react-router-dom';
 import { AddProductProvider } from './components/context/AddProductProvider';
 import FullNameProvider from './components/context/FullNameProvider';
@@ -41,6 +42,7 @@ const App = () => {
                       <Route path='/Cart' element={<Cart />} />
                       <Route path='/' element={<Home />} />
                       <Route path='/Guidelines/Guidelines' element={<Guidelines />} />
+                      <Route path='/About/About' element={<About />} />
                     </Routes>
                   </ProductsProvider>
                 </AddProductProvider>
