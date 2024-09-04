@@ -1,0 +1,21 @@
+.footer-heading {
+    margin-bottom: 10px;
+}
+
+.footer-heading img{
+    width: 150px;
+    margin: auto;
+    margin-bottom: 14px;
+}
+
+.footer-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contacts span{
+    font-size: 14px;
+    padding: 0% 1.5%;
+    color: var(--text-color);
+    border-left: 2px solid rgba(0, 0, 0, 0.308);
+}

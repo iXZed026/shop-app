@@ -1,0 +1,48 @@
+.buy {
+    width: 100%;
+    height: 101vh;
+    position: fixed;
+    top: 0;
+    background-color: #ffffffba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-container {
+    background-color: var(--text-color);
+    margin: auto;
+    border-radius: 5px;
+}
+
+.buy-flex .buy-body {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 2% 1%;
+}
+
+.buy-flex .buy-body svg {
+    font-size: 25px;
+    color: rgb(80, 239, 80);
+}
+
+.buy-flex .buy-body span {
+    color: #ffff;
+    font-size: 16px;
+}
+
+.buy-flex #buy-line {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(80, 239, 80);
+    animation: buyLineAni 4s linear 1;
+}
+
+@keyframes buyLineAni {
+    0% {
+        width: 0;
+    }
+}

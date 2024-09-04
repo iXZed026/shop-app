@@ -1,0 +1,20 @@
+.form-body input {
+    width: 380px;
+    padding: 3% 3%;
+    color: rgba(0, 0, 0, 0.616);
+    border: 1px solid #008EB2;
+    border-radius: 7px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 3%;
+}
+
+.form-body #input-error {
+    margin-bottom: 1%;
+    font-size: 13px;
+}
+
+#input-error {
+    color:rgb(255, 0, 0);
+    font-weight: bold;
+}

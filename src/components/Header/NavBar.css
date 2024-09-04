@@ -1,0 +1,28 @@
+nav ul {
+    direction: rtl;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    width: 130px;
+    margin-right: .5%;
+}
+
+nav ul li svg {
+    width: 17px;
+    color:var(--text-color)
+}
+
+#nav-link {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+    font-size: 13px;
+    font-weight: bold;
+    color:var(--text-color);
+}
+

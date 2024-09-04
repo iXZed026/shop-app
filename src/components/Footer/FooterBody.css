@@ -1,0 +1,77 @@
+.footer-body .footer-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.footer-body .footer-information #info {
+    width: 70%;
+}
+
+.footer-body .footer-information #info span {
+    display: flex;
+    align-items: center;
+    color: #55C2D3;
+    font-size: 15px;
+    font-weight: bold;
+    gap: 2px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.footer-body .footer-information #info span svg {
+    font-size: 21px;
+    transform: rotate(-90deg);
+}
+
+.footer-body .footer-information #info h2 {
+    color: var(--text-color);
+    margin-bottom: 1%;
+}
+
+.footer-body .footer-information #info .paragraph {
+    height: 60px;
+    color: rgba(0, 0, 0, 0.658);
+    margin-bottom: 1%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.paragraph-animation {
+    height: 190px;
+    margin-bottom: 1%;
+    color: rgba(0, 0, 0, 0.658);
+    overflow-y: scroll;
+    animation: paragraphAni .5s ease-in 1;
+}
+
+@keyframes paragraphAni {
+    0% {
+        height: 60px;
+        overflow: hidden;
+    }
+}
+
+.license {
+    width: 30%;
+    height: 260px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+}
+
+.license img {
+    width: 30%;
+    height: 120px;
+    object-fit: cover;
+    padding: 3%;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.footer-body h4 {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.658);
+    text-align: center;
+}

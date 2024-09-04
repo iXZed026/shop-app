@@ -1,0 +1,16 @@
+#first-ads{
+    width: 100%;
+    height: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+#first-ads img{
+    width: 92%;
+    border-radius: 20px;
+    cursor: pointer;
+}

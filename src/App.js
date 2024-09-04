@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import "./App.css"
+import Header from './components/Header/Header';
+import Cart from './components/Header/Cart';
+import Home from './components/Home/Home';
+import { Routes, Route } from 'react-router-dom';
+import { AddProductProvider } from './components/context/AddProductProvider';
+import FullNameProvider from './components/context/FullNameProvider';
+import ProductsProvider from './components/context/ProductsProvider';
+import ScrollProvider from './components/context/ScrollProvider';
+import FirstAds from './components/Ads/FirstAds';
+import SecoundAds from './components/Ads/SecoundAds';
+import Loading from './components/Loading/Loading';
+import Footer from './components/Footer/Footer';
 
-function App() {
+const App = () => {
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    let showWebsite = setTimeout(() => {
+      setLoading(true);
+    }, 4000);
+
+    return () => clearTimeout(showWebsite)
+
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div className="app">
+      {
+        loading ? (
+          <>
+            <FullNameProvider>
+              <ScrollProvider>
+                <AddProductProvider>
+                  <ProductsProvider>
+                    <Header />
+                    <Routes>
+                      <Route path='/Cart' element={<Cart />} />
+                      <Route path='/' element={<Home />} />
+                    </Routes>
+                  </ProductsProvider>
+                </AddProductProvider>
+              </ScrollProvider>
+            </FullNameProvider>
+            <SecoundAds />
+            <FirstAds />
+            <Footer />
+          </>
+        ) : (
+          <Loading />
+        )
+      }
+    </div >
+  )
 }
 
-export default App;
+export default App
