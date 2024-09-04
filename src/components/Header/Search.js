@@ -38,7 +38,6 @@ const Search = () => {
 
         const value = e.target.value;
 
-
         const fillteringSuggestion = searchSuggestions.filter(suggest => {
             return suggest.toLowerCase().startsWith(value.toLowerCase());
         });

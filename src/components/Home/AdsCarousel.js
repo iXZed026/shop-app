@@ -5,7 +5,7 @@ import { GrFormPrevious } from "react-icons/gr";
 
 const AdsCarousel = () => {
 
-    const carouselImg = ["../../images/carouselAds1.gif", "../../images/carouselAds2.gif", "../../images/carouselAds3.gif", "../../images/carouselAds4.webp", "../../images/carouselAds5.webp"];
+    const carouselImg = ["../../images/carouselAds6.webp","../../images/carouselAds1.gif", "../../images/carouselAds2.gif", "../../images/carouselAds3.gif", "../../images/carouselAds4.webp", "../../images/carouselAds5.webp"];
     let [counter, setCounter] = useState(0);
 
     const nextImgHandler = () => {
