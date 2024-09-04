@@ -1,16 +1,17 @@
 import React from 'react';
-import "./Contact.js.css";
+import "./Contact.css";
+import Map from './Map';
 
 const Contact = () => {
-  return (
-    <div className="contact">
-        <div className="contact-container">
-            <div className="contact-flex">
-                
+    return (
+        <div className="contact">
+            <div className="contact-container">
+                <div className="contact-flex">
+                    <Map />
+                </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Contact

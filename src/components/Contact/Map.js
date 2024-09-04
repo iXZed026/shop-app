@@ -2,15 +2,11 @@ import React from 'react';
 import "./Map.css";
 
 const Map = () => {
-  return (
-    <div className="map">
-        <div className="map-container">
-            <div className="map-flex">
-                
-            </div>
+    return (
+        <div className="map">
+            <img src="../../images/map.png" alt="Map not found" />
         </div>
-    </div>
-  )
+    )
 }
 
 export default Map
