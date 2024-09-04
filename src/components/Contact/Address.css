@@ -1,0 +1,47 @@
+.address {
+    width: 49%;
+    padding: 0 2%;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+}
+
+.address-header h1 {
+    font-size: 21px;
+    padding: 2% 0;
+}
+
+.address-body {
+    padding: 1% 0;
+    width: 90%;
+    margin: auto;
+}
+
+.address-body p {
+    font-size: 14.5px;
+    color: #210000;
+    line-height: 35px;
+}
+
+.suport-header h1 {
+    font-size: 21px;
+    padding: 2% 0;
+}
+
+.suport-body {
+    padding: 2% 0;
+    text-align: left;
+}
+.suport-body h2{
+    font-size: 17px;
+    padding: 1% 0;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.suport-body p {
+    font-size: 14.5px;
+    color: #210000;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
