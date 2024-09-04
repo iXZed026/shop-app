@@ -14,13 +14,13 @@ const NavBar = () => {
                     <Link to="/" id='nav-link'><IoHomeSharp />خانه</Link>
                 </li>
                 <li>
-                    <Link to="" id='nav-link'><MdPrivacyTip/>راهنما و مقررات</Link>
+                    <Link to="/Guidelines/Guidelines" id='nav-link'><MdPrivacyTip/>راهنما و مقررات</Link>
                 </li>
                 <li>
                     <Link to="" id='nav-link'><IoCall/>تماس با ما</Link>
                 </li>
                 <li>
-                    <Link to="" id='nav-link'><FaCircleInfo/>درباره ما</Link>
+                    <Link to="/About/About" id='nav-link'><FaCircleInfo/>درباره ما</Link>
                 </li>
             </ul>
         </nav>

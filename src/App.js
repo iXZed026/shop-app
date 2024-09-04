@@ -39,7 +39,8 @@ const App = () => {
                     <Header />
                     <Routes>
                       <Route path='/Cart' element={<Cart />} />
-                      <Route path='/' element={<Guidelines />} />
+                      <Route path='/' element={<Home />} />
+                      <Route path='/Guidelines/Guidelines' element={<Guidelines />} />
                     </Routes>
                   </ProductsProvider>
                 </AddProductProvider>
